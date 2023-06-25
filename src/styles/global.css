@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color: #000000;
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #000000;
+  --color: #ffffff;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--color-bg);
+  color: var(--color);
+}
